@@ -1,0 +1,98 @@
+.addUsers {
+    width: 100%;
+    max-width: 400px; /* Begränsa maxbredd för bättre responsivitet */
+    padding: 30px;
+    background-color: rgba(17, 25, 40, 0.801);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.473);
+    box-sizing: border-box; /* Säkerställ att padding och gränser inte överskrider bredden */
+  }
+  
+  .userform {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .addUsers input {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.1); /* Gör inputfältets bakgrund lite genomskinlig */
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .addUsers input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Justera färg för bättre kontrast */
+  }
+  
+  .user-search {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .detail-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+  }
+  
+  .addUsers .user-img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .addBtn {
+    padding: 10px 20px; /* Ändrat padding för bättre knappstorlek */
+    border-radius: 10px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-left: 13px;
+    margin-right: 15px;
+    transition: background-color 0.3s ease; /* Lägg till smooth transition för hover-effekt */
+  }
+  
+  .addBtn:hover {
+    background-color: #4389e6;
+  }
+  
+  .addBtn:active {
+    transform: scale(0.95); /* Liten "klick-effekt" */
+  }
+  
+  @media (max-width: 768px) {
+    .addUsers {
+      width: 90%; /* Gör det mer responsivt på mindre skärmar */
+      padding: 20px;
+    }
+  
+    .addUsers input {
+      padding: 15px;
+    }
+  
+    .addBtn {
+      padding: 8px 15px;
+    }
+  }
+  
